@@ -183,13 +183,21 @@ Exclude: vocals, sudden drum hits, busy lead melody
   - **平稳底色** — 全程等能量、不抢戏；口播、教程。
   - **三幕推进** — 低 → 高 → 收的三段式；叙事短片、vlog。
 
-## Three mixing red lines
+## Mixing red lines
+
+**First, at the source.** For anything with narration, bake the space into
+the prompt itself: `voiceover-friendly, sparse arrangement, no lead melody,
+mid-band carved out (avoid 500 Hz–3.5 kHz)` — room left for the voice at
+generation time beats room recovered in the mix.
+
+Then the post-side red lines:
 
 1. Music **below the voice** — keep BGM roughly **20 dB** under the
    narration/dialogue.
 2. Under talking-head narration, the music must have **no prominent melody**.
 3. When something else cuts in mid-video (insert, announcement), the music
-   **steps aside first**.
+   **steps aside first**: duck it — 社区常见值（非本教程口径）：压到人声下方
+   约 -18~-22 dB，release（回升时间）200–300 ms。
 
 ## Music vs picture first — pick one workflow
 
