@@ -31,6 +31,18 @@ git clone https://github.com/youyouhe/music-prompt-skill.git ~/.claude/skills/mu
 > ④ A 小调起步，亮相转 C 大调 ⑤ 96 BPM ⑥ 合成器 pad + 少量钢琴
 > ⑦ 第 22 秒一个重音，随后进入主段落 ⑧ 不要人声，不要突然的鼓点
 
+## Examples
+
+- [`examples/minimax/`](examples/minimax/PROMPTS.md) —— 6 个场景（悬疑 / 治愈 / 旅行 vlog /
+  古风 / 带货 / 科技宣传片）的**三写法提示词存档**：八段公式逐项填写 + 国际版英文
+  Style 串 + 国内版中文自然段，并附调用脚本。AI 生成目标模型为 MiniMax music-3.0
+  （`is_instrumental` 纯音乐，≤15 秒）。
+  **注意**：2026-10-19 真实调用时，MiniMax 音乐生成付费接口已按其
+  [服务调整通知](https://platform.minimax.cn/docs/guides/music-generation) 自 2026-08-20
+  起停止面向新账号服务（HTTP 410 / status_code 2153），故本目录**暂无音频成品**；
+  提示词可直接复用于 MiniMax Audio 网页版、开源 MiniMax-Music3 或 Suno 类工具
+  （国际版串）。成本口径：0 次成功调用，无计费产生。
+
 ## 来源与致谢
 
 - 方法论提炼自一位内容创作者的公开视频教程（微信视频号）：
