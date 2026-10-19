@@ -1,0 +1,33 @@
+{
+  "task": "music-minimax-examples",
+  "description": "MiniMax music-3.0 多场景纯音乐示例:6 段双版本提示词按 SKILL.md 方法论编写;真实调用被 2026-08 新账号限制拦截,0 段音频产出",
+  "generated_at": "2026-10-19",
+  "api": {
+    "endpoint": "POST https://api.minimax.cn/v1/music_generation",
+    "model": "music-3.0",
+    "is_instrumental": true,
+    "audio_setting": { "sample_rate": 44100, "bitrate": 256000, "format": "mp3" },
+    "output_format": "url",
+    "auth": "Bearer token from env MINIMAX_TOKEN (never persisted or echoed)"
+  },
+  "restriction": {
+    "encountered": true,
+    "date": "2026-10-19",
+    "http_status": 410,
+    "status_code": 2153,
+    "status_msg": "This Music API is no longer available to new users. Existing paying customers can continue to use the service. For new access, please try MiniMax Audio (https://www.minimax.io/audio) or the open-source model at https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+    "trace_id": "0724cc0e528a6c464511390e5f9ae124",
+    "handling": "首次调用即停:未重试、未换参数绕过,与官方文档 2026-08-20 服务调整通知一致"
+  },
+  "clips": [],
+  "planned_clips": [
+    { "file": "01-suspense.mp3", "scene": "悬疑", "mode": "A 小调", "bpm": 60, "instruments": "持续低音+弦乐高音点缀" },
+    { "file": "02-healing.mp3", "scene": "治愈", "mode": "C 大调", "bpm": 72, "instruments": "毛毡钢琴+轻打击乐+弦乐铺底" },
+    { "file": "03-travel-vlog.mp3", "scene": "旅行 vlog", "mode": "C 大调", "bpm": 118, "instruments": "尤克里里+拍手/沙锤+木吉他" },
+    { "file": "04-guofeng.mp3", "scene": "古风", "mode": "D 宫五声", "bpm": 76, "instruments": "古筝+竹笛+弦乐铺底" },
+    { "file": "05-selling.mp3", "scene": "带货", "mode": "C 大调", "bpm": 128, "instruments": "电钢琴+贝斯+鼓组+拍手" },
+    { "file": "06-tech-promo.mp3", "scene": "科技宣传片", "mode": "A 小调→A 大调(第 8 秒)", "bpm": 112, "instruments": "合成器脉冲+pad+lead" }
+  ],
+  "cost": "未产生任何用量:首次调用即被拒,无计费响应字段;以平台账单为准",
+  "files": ["prompts.json", "generate.py", "PROMPTS.md", "manifest.json"]
+}
