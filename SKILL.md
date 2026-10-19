@@ -115,6 +115,47 @@ are how international tools receive them. Put the negative list in the
 exclusion field where the tool has one (e.g. Suno 的 Exclude styles 一栏);
 otherwise append it to the Style string (`no vocals, no sudden drum hits`).
 
+## One brief, two versions
+
+The same eight decisions ship in two formats — pick by tool, or hand over
+both:
+
+- **国际版** — English Style string + structure metatags + negative list,
+  for Suno/Udio (the two boxes above).
+- **国内版** — one natural Chinese paragraph, time points written out in
+  words, for 豆包/海绵音乐.
+
+Worked example — a 60-second smartwatch launch film; restrained build,
+impact when the product appears at ~22 s (example adapted from a draft
+by Gemini):
+
+**国际版**
+
+```
+Style:   cinematic electronic, restrained tension building to bright
+         uplift, A minor into C major, 98 BPM, analog synth pads,
+         sparse piano, voiceover-friendly
+Exclude: vocals, sudden drum hits, busy lead melody
+
+[Intro: Ambient Pad]
+[Buildup]
+[Beat Drop]
+[Break: Bright Theme]
+[Outro: Sudden Cut]
+```
+
+[Beat Drop] 落在产品亮相那一秒（约 22 秒处——秒级对位交给剪辑，不要指望
+模型掐秒）；之后的明亮主段落由 [Break: Bright Theme] 承接，转入 C 大调；
+[Outro: Sudden Cut] 对应「结尾干脆收住」。
+
+**国内版**
+
+> 为一支 60 秒的智能手表发布会视频配乐：开头约 22 秒保持克制、略带紧张感，
+> A 小调，合成器 pad 铺底，力度渐渐收紧；第 22 秒产品亮相处落一个明确的
+> 重音，随后转入 C 大调，情绪明亮打开，速度 98 BPM，钢琴少量点缀。全曲
+> 不要人声、不要突然的鼓点；编曲保持稀疏、口播友好，给解说留出中频空间；
+> 结尾干脆收住，不留尾巴。
+
 ## Eight video genres — quick recipes
 
 | Genre | Recipe |
