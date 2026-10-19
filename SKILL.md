@@ -81,6 +81,40 @@ explicitly; write the duration as a **number**:
 7. **结构和时间点** — the shape over time, e.g. 「第 22 秒一个重音」
 8. **负面清单** — what to avoid: 不要人声 / 不要突然的鼓点 / …
 
+## The two boxes: how international tools parse a prompt
+
+Suno / Udio don't read one paragraph — they split input across two fields
+that parse very differently (this two-field split and the English-tag
+convention are community engineering practice):
+
+- **Style box** — comma-separated **English tags**, one per decision:
+  genre, mood, key, BPM, instruments, production feel:
+
+  ```
+  cinematic electronic, restrained tension building to bright uplift,
+  A minor into C major, 98 BPM, analog synth pads, sparse piano
+  ```
+
+- **Structure box** (the lyrics field) — section **metatags**, one per line:
+
+  ```
+  [Intro: Ambient Pad]
+  [Buildup]
+  [Beat Drop]
+  [Break: Bright Theme]
+  [Outro: Sudden Cut]
+  ```
+
+Timing lives in the structure, not the Style box: a natural-language time
+point like 「第 22 秒一个重音」 does nothing in the Style box — rewrite it
+as a metatag ([Beat Drop]) placed where the hit should land. Metatag timing
+is approximate; second-accurate cues are the editor's job, not the model's.
+
+The eight-section formula above still collects the decisions; the two boxes
+are how international tools receive them. Put the negative list in the
+exclusion field where the tool has one (e.g. Suno 的 Exclude styles 一栏);
+otherwise append it to the Style string (`no vocals, no sudden drum hits`).
+
 ## Eight video genres — quick recipes
 
 | Genre | Recipe |
@@ -108,6 +142,9 @@ explicitly; write the duration as a **number**:
   (beat-cut / 卡点 videos).
 - **Picture first**: cut the edit, note the transition time points, then write
   them into the prompt (「第 22 秒一个重音」) — durations as plain numbers.
+  This worded time point is the **domestic-tool format** (豆包/海绵音乐 parse
+  natural language); for Suno/Udio, rewrite the points as structure metatags
+  (see the two boxes above).
 - **Long videos** with big arcs: generate in several segments and join them in
   the edit — far easier to control than one long generation.
 - **Endings**: stop cleanly, or resolve on a chord — don't let it trail off
