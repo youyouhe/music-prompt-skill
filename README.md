@@ -44,15 +44,29 @@ git clone https://github.com/youyouhe/music-prompt-skill.git ~/.claude/skills/mu
 
 ## Examples
 
-- [`examples/minimax/`](examples/minimax/PROMPTS.md) —— 6 个场景（悬疑 / 治愈 / 旅行 vlog /
-  古风 / 带货 / 科技宣传片）的**三写法提示词存档**：八段公式逐项填写 + 国际版英文
-  Style 串 + 国内版中文自然段，并附调用脚本。AI 生成目标模型为 MiniMax music-3.0
-  （`is_instrumental` 纯音乐，≤15 秒）。
-  **注意**：2026-10-19 真实调用时，MiniMax 音乐生成付费接口已按其
-  [服务调整通知](https://platform.minimax.cn/docs/guides/music-generation) 自 2026-08-20
-  起停止面向新账号服务（HTTP 410 / status_code 2153），故本目录**暂无音频成品**；
-  提示词可直接复用于 MiniMax Audio 网页版、开源 MiniMax-Music3 或 Suno 类工具
-  （国际版串）。成本口径：0 次成功调用，无计费产生。
+6 个场景(悬疑 / 治愈 / 旅行 vlog / 古风 / 带货 / 科技宣传片)的示例音频,现状三分支:
+
+**① MiniMax API(暂不可用,已存档)**:2026-10-19 真实调用时,MiniMax 音乐生成付费接口
+已按其 [服务调整通知](https://platform.minimax.cn/docs/guides/music-generation)
+自 2026-08-20 起停止面向新账号服务(HTTP 410 / status_code 2153),故暂无 API 音频成品。
+调用脚本([generate.py](examples/minimax/generate.py),目标模型 MiniMax music-3.0,
+`is_instrumental` 纯音乐)与双版本提示词已存档于
+[`examples/minimax/`](examples/minimax/PROMPTS.md),未来账号可用或改用开源
+MiniMax-Music3 时可直接复用。
+
+**② Suno 实例 ×6(用户实测,可点开试听)**:示例音频由用户 2026-10-19 在 Suno 用本仓
+**国际版提示词**生成;在线试听开放,mp3 下载需 Suno 订阅,故仓库内以链接形式提供:
+
+- 01 悬疑:https://suno.com/s/05x9AkMJ9Krw93im
+- 02 治愈:https://suno.com/s/76DnjBrQWeTLCpAp
+- 03 旅行 vlog:https://suno.com/s/pINxP6ETpYrRcBWf
+- 04 古风:https://suno.com/s/jPH4B3LJF4oMlgHZ
+- 05 带货:https://suno.com/s/Ud8WU5QS1GwzQOjq
+- 06 科技宣传片:https://suno.com/s/GmKbmIXJO9lxKrax
+
+**③ 本地生成**:任选一个 AI 音乐工具(Suno / 豆包 / 海绵音乐等),配合仓内提示词自行
+生成。6 个场景的**三写法提示词**——八段公式逐项填写 + 国际版英文 Style 串 +
+国内版中文自然段——见 [`examples/minimax/PROMPTS.md`](examples/minimax/PROMPTS.md)。
 
 ## 来源与致谢
 
