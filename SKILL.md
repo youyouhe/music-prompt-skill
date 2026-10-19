@@ -1,6 +1,6 @@
 ---
 name: music-prompt
-description: 配乐与背景音乐提示词方法论。当用户要给视频配乐、写 BGM/音乐生成提示词（Suno、豆包等 AI 音乐工具）、选择音乐情绪方向时使用。Music prompting methodology for videos — emotion switches (mode/BPM/register/articulation/instruments/chords & drone), an eight-section prompt formula, eight genre recipes, mixing red lines, and reference-track workflow. Use when writing BGM prompts or choosing music direction.
+description: 配乐与背景音乐提示词方法论。当用户要给视频配乐、写 BGM/音乐生成提示词（Suno、豆包等 AI 音乐工具）、选择音乐情绪方向时使用。Music prompting methodology for videos — emotion switches (mode/BPM/register/articulation/instruments/chords & drone), an eight-section prompt formula, dual-box prompts for international tools (English Style tags + structure metatags) vs natural-language prompts for domestic tools, eight genre recipes, mixing red lines, and reference-track workflow. Use when writing BGM prompts or choosing music direction.
 ---
 
 # Music prompting — scoring direction & BGM briefs
@@ -15,6 +15,24 @@ music tools (Suno, 豆包, 海绵音乐, etc.). It produces text, not audio:
 AI can generate the track, but *which emotion to ask for* is a decision the
 user (with you) makes first. Everything below feeds the eight-section formula
 at the end — fill it in and hand it to the music tool.
+
+## When the request is thin — default, then disclose
+
+Users often open with almost nothing: 「给这个视频配个乐」. Don't reply with a
+questionnaire. Name the video type, let the type set the defaults, and move:
+
+1. **Name the video type** — vlog? promo? talking-head? That one fact implies
+   most of the switches below.
+2. **Fill type-appropriate defaults and proceed**: 露营 vlog → 大调、
+   90–110 BPM、木吉他；宣传片 → 小调起步、渐紧、亮相打开（见速查表）。
+3. **Deliver, then disclose the guesses** — one line after the prompt:
+   「我按露营 vlog 补了这些假设（大调 / 100 BPM / 木吉他），哪条不合适
+   直接说，我改」。
+
+Only two gaps genuinely change the deliverable; mention them in passing
+instead of blocking: 有没有解说人声（决定下面的混音红线），用哪个工具生成
+（决定国际版还是国内版）。No answer? Take conservative defaults — assume
+narration, and ship both versions.
 
 ## The emotion switches, in order of impact
 
