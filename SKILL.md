@@ -169,6 +169,20 @@ Exclude: vocals, sudden drum hits, busy lead melody
 | 搞笑 comedy | bounce feel, xylophone, bassoon |
 | 知识口播 talking-head | marimba, steady tempo, no prominent melody, the smaller the dynamics swing the better |
 
+## Advanced: concrete keys & energy curves
+
+> 本小节为 Gemini 提出的优化建议，**未逐一实测**，听感为准；BPM 等参数
+> 仍以上文教程口径为准。
+
+- **调性写具体**：把 major/minor 细化到具体 key（如 Eb major 而不是笼统的
+  major），转调路径写明——小调铺垫 → 大调释放是宣传片/发布会的常见走向。
+- **能量曲线四型**：与其只写「渐强」，不如选定一条曲线写进结构：
+  - **线性攀升** — 能量从头一路走高；发布会、开箱。
+  - **反转高潮** — 前段克制，在画面反转点（产品亮相/揭晓）顶到峰值；
+    即上方手表案例的曲线。
+  - **平稳底色** — 全程等能量、不抢戏；口播、教程。
+  - **三幕推进** — 低 → 高 → 收的三段式；叙事短片、vlog。
+
 ## Three mixing red lines
 
 1. Music **below the voice** — keep BGM roughly **20 dB** under the
